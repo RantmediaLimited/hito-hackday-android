@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         tempRV.setAdapter(historicalTemperatureAdapter);
 
 
-
         setHotColours();
 
         // Write a message to the database
@@ -69,17 +68,20 @@ public class MainActivity extends AppCompatActivity {
                 DatabaseDataObject data = dataSnapshot.getValue(DatabaseDataObject.class);
 
                 timeTemperatureObjects.clear();
-                temperatureTV.setText(data.getCurrent_temperature() + "°");
-                currentTemperature = data.getCurrent_temperature();
+                if (data != null) {
+                    temperatureTV.setText(data.getCurrent_temperature() + "°");
+                    currentTemperature = data.getCurrent_temperature();
 
-                Set<String> keys = data.getTemperature_history().keySet();
-                for (String key: keys) {
-                    timeTemperatureObjects.add(new TimeTemperatureObject(Long.valueOf(key), data.getTemperature_history().get(key).getTemperature()));
+                    if (data.getTemperature_history() != null) {
+                        Set<String> keys = data.getTemperature_history().keySet();
+                        for (String key : keys) {
+                            timeTemperatureObjects.add(new TimeTemperatureObject(Long.valueOf(key), data.getTemperature_history().get(key).getTemperature()));
+                        }
+
+                        handleCurrentTemperature();
+                        historicalTemperatureAdapter.swapData(timeTemperatureObjects);
+                    }
                 }
-
-                handleCurrentTemperature();
-                historicalTemperatureAdapter.swapData(timeTemperatureObjects);
-
             }
 
             @Override
@@ -123,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
 
             setBoilingColours();
         }
-
 
 
     }
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     private void setFreezingColours() {
         StatusBarHelper.setStatusBarColour(getWindow(), getApplicationContext(), R.color.verycold);
         GradientSetter.setGradientThreeColours(baseLayout, getApplicationContext(), R.color.verycold, R.color.freezing);
-        setComment("It's time to take a bath.\nIn a volcano.");
+        setComment("It's time to take a bath.\nInside of a volcano.");
     }
 
 }
