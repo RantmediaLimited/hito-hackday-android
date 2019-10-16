@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">HackDay-Oct-2019</string>
     <string name="action_settings">Settings</string>
+    <string name="hotels">Hotels</string>
+    <string name="hotels_desc">All hotels and hostels are sorted by hospitality rating</string>
+    <string name="banks">Banks</string>
+    <string name="banks_desc">We carefully verify all banks before add them into the app</string>
+    <string name="stores">Stores</string>
+    <string name="stores_desc">All local stores are categorized for your convenience</string>
+
 </resources>
