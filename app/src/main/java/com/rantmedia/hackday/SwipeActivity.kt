@@ -1,4 +1,4 @@
-package com.allianz.hackday
+package com.rantmedia.hackday
 
 import android.os.Bundle
 import android.view.Menu

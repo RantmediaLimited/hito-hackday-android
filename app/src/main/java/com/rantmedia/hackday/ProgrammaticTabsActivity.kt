@@ -1,4 +1,4 @@
-package com.allianz.hackday
+package com.rantmedia.hackday
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,9 +6,7 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_programmatic_tabs.*
 import android.animation.ValueAnimator
 import android.os.Handler
-import android.util.Log
 import android.widget.ImageView
-import android.widget.Toast
 
 const val ANIMATION_DURATION = 200L
 

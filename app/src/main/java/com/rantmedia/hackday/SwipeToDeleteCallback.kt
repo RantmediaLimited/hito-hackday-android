@@ -1,4 +1,4 @@
-package com.allianz.hackday
+package com.rantmedia.hackday
 
 import android.content.Context
 import android.graphics.*

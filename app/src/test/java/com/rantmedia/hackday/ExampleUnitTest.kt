@@ -1,4 +1,4 @@
-package com.allianz.hackday
+package com.rantmedia.hackday
 
 import org.junit.Test
 

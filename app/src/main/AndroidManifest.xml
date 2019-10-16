@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.allianz.hackday">
+    package="com.rantmedia.hackday">
 
     <dist:module dist:instant="true" />
 
@@ -13,12 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SwipeActivity"
+            android:name="com.rantmedia.hackday.SwipeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.rantmedia.hackday.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProgrammaticTabsActivity"
+        <activity android:name="com.rantmedia.hackday.ProgrammaticTabsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".LottieTabs"
+            android:name="com.rantmedia.hackday.LottieTabs"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".RamotionPrototype"
+            android:name="com.rantmedia.hackday.RamotionPrototype"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
