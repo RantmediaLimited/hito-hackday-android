@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='HackDay-Oct-2019'
+rootProject.name='HackDay'
