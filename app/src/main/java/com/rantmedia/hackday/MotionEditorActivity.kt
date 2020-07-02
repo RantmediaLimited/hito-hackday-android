@@ -25,7 +25,7 @@ class MotionEditorActivity : Activity() {
         }
 
         curve_btn.setOnClickListener {
-            motionContainer.setTransition(R.id.curve_transition)
+            motionContainer.setTransition(R.id.both_transition)
             motionContainer.transitionToEnd()
         }
     }

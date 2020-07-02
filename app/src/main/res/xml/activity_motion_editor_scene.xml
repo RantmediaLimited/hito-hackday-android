@@ -7,21 +7,21 @@
         android:id="@+id/blue_transition"
         motion:constraintSetEnd="@+id/blue_end"
         motion:constraintSetStart="@id/blue_start"
-        motion:duration="1000">
+        motion:duration="500">
     </Transition>
 
     <Transition
         android:id="@+id/orange_transition"
         motion:constraintSetEnd="@+id/orange_end"
         motion:constraintSetStart="@id/orange_start"
-        motion:duration="1000">
+        motion:duration="500">
     </Transition>
 
     <Transition
-        android:id="@+id/curve_transition"
+        android:id="@+id/both_transition"
         motion:constraintSetEnd="@+id/curve_end"
         motion:constraintSetStart="@id/curve_start"
-        motion:duration="1000">
+        motion:duration="500">
         <OnClick
             motion:clickAction="toggle"
             />
