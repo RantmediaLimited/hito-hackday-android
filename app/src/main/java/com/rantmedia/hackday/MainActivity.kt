@@ -26,5 +26,9 @@ class MainActivity : AppCompatActivity() {
         prototype4.setOnClickListener {
             startActivity(Intent(this, SwipeActivity::class.java))
         }
+
+        jetpack_compose_btn.setOnClickListener {
+            startActivity(Intent(this, JetpackComposeActivity::class.java))
+        }
     }
 }
