@@ -7,5 +7,6 @@
     <string name="banks_desc">We carefully verify all banks before add them into the app</string>
     <string name="stores">Stores</string>
     <string name="stores_desc">All local stores are categorized for your convenience</string>
+    <string name="button">Button</string>
 
 </resources>
