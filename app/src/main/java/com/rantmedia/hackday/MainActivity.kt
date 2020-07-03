@@ -30,5 +30,9 @@ class MainActivity : AppCompatActivity() {
         jetpack_compose_btn.setOnClickListener {
             startActivity(Intent(this, JetpackComposeActivity::class.java))
         }
+
+        motion_editor_btn.setOnClickListener {
+            startActivity(Intent(this, MotionEditorActivity::class.java))
+        }
     }
 }
