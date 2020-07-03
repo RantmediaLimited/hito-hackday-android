@@ -24,7 +24,9 @@
             android:id="@+id/blue_circle"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/motion_layout_circle_blue"/>
+            android:src="@drawable/motion_layout_circle_blue"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="509dp" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 
@@ -49,7 +51,7 @@
         android:id="@+id/curve_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Curve"
+        android:text="Both"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
